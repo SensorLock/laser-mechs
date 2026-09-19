@@ -1,29 +1,8 @@
-# Riot Dice
-**Riot Dice** is an open source engine for chaotic dexterity-based tabletop miniatures games.
-
-## What is Riot Dice?
-Originally written as the core system of [SPACE GITS](https://planetsmashergames.com/space-gits), **Riot Dice** is an open source rules engine for chaotic dexterity-based miniatures games. It uses a number of dexterity-based mechanics, many building on the core idea that the location of rolled dice (relative to the models) should matter.
-
-**Riot Dice** is copyright 2025 [Mike Hutchinson](https://planetsmashergames.com/) and licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1).
-
-## The License
-
-If you are interested in making your own dexterity-based miniatures game, I welcome you to use the **Riot Dice** engine, which is offered under a Creative Commons license. Specifically: I offer the text of my **Riot Dice System Reference Document** ("SRD") under a [Creative Commons CC by 4.0 licence](https://creativecommons.org/licenses/by/4.0/). This allows you to remix, adapt, distribute and build upon in any medium or format, so long as you give attribution to me as the creator. The licence allows for commercial use.
-
-If you do use the **Riot Dice** engine (or parts of it) in your game, ask that you credit me (Mike Hutchinson) and include the URL [https://planetsmashergames.com/riot-dice](https://planetsmashergames.com/riot-dice) in such accreditation. For example:
+# Laser Mechs
+**Laser Mechs** is inspired by Space Gits, but thematically styled on mech games with lasers and missiles.
 
 > [!TIP]
-> _GAME_NAME is powered by Riot Dice, an open-source rules engine by Mike Hutchinson (https://planetsmashergames.com/riot-dice)._
-
-I really hope you use this system, and make something cool and fun with it. If you use **Riot Dice** for anything, [let me know](https://planetsmashergames.com/discord/).
-
-
-# Riot Dice by Mike Hutchinson
-
-This is the Riot Dice System Reference Document. It describes the **Riot Dice** game engine. 
-
-> [!TIP]
-> _When you see a note formatted like this, this is an option that you can choose to use or ignore._
+> Laser Mechs is powered by Riot Dice, an open-source rules engine by Mike Hutchinson (https://planetsmashergames.com/riot-dice)._
 
 > [!WARNING]
 > _Only the text contained in this **Riot Dice** System Reference Document is covered by the CC license; the text of the rulebook of [SPACE GITS](https://planetsmashergames.com/space-gits) is not._
@@ -34,21 +13,17 @@ This is the Riot Dice System Reference Document. It describes the **Riot Dice** 
 ## The Basics
 
 ### Models
-Models are 28mm miniatures, and should be mounted on bases between 20mm and 40mm.
-
-> [!TIP]
-> _Details such as model scale, legal base sizes and so on are entirely up to you. I just provide some defaults._
+Mechs are 6mm-scale armored robots piloted by a skilled warrior. They come in many sizes and armaments.
 
 Models are defined by a set of Stats:
-* **Cost**: The cost, in points, to add this model to your gang. All models cost 5 points.
-* **Move Dice**: The dice you roll for this model when they make a Scoot Action. All have a Move of 3D6.
-* **Toughness**: This is the number an opponent has to roll to successfully do Big Damage to this model. All models have a Toughness of 3.
-
-> [!TIP]
-> _You might want to add other stats, and create different classes of model that have different stats than the defaults given above._
+* **Size**: Small (size=1), medium (size=2), or large (size=3).
+* **Cost**: The cost, in points, to add this model to your squad. All models cost 5*size points.
+* **Move Dice**: The dice you roll for this model when they make a Scoot Action. (5-size)d6
+* **Armor**: How many times you need to be critically hit before exploding. Equal to size.
+* **Firepower**: Choose how many lasers and how many missile launchers. Total count of both is twice the size.
 
 ### Players
-Players are referred to as Bosses. A model's boss is the player that is controlling them.
+Players are referred to as Commanders. A model's commander is the player that is controlling them.
 
 ### Measuring
 When measuring and checking lines between dice and models, you can measure from anywhere on the models' bases to anywhere on the dice. If it grazes either, it is in. If you are using a vehicle without a base, measure from the hull. You can premeasure during your activation.
@@ -56,21 +31,21 @@ When measuring and checking lines between dice and models, you can measure from 
 ## The Tower
 Each model has a personal dice tower of dice. 
 
-When a model adds a dice to its tower, its boss adds a six-sided dice to this tower, placing it on top of the other dice in their tower to form a single stack of dice. 
+When a model adds a dice to its tower, its commander adds a six-sided dice to this tower, placing it on top of the other dice in their tower to form a single stack of dice. 
 
 The tower has to touch the model at all times. I.e. When you move a model, you have to move their tower with them.
 
 > [!TIP]
-> _For games that don't want or need a damage and/or "down but not out" mechanic, you could remove this whole "The Tower" section and not have dice towers. They aren't essential to the Riot Dice system. For example, I wrote a non-combat sports game that uses most the Riot Dice rules, but didn't need the tower. If you still want a damage system, you could use a simple HP stat for each model._
+> _The tower is going to represent heat from firing weapons. If the tower falls over that model shuts down and is vulnerable. Damage is separately tracked as armor points._
 
 ### Falling Dice
 If any of the dice fall off a git’s tower at any point, for any reason, that tower has fallen, and the dice from the tower are discarded.
 
-If a boss causes one of their own towers to fall: that git falls over. Knock the model over on its ass. If that happens during a git’s activation, their activation is over. 
+If a commander causes one of their own towers to fall: that git falls over. Knock the model over on its ass. If that happens during a git’s activation, their activation is over. 
 
-If a boss causes anyone else’s tower to fall, through clumsiness or deliberate sabotage, that model suffers a moment of lucid clarity and sobers up: their tower dice are all discarded, but they remain standing. (Basically: don’t knock other player’s towers over.)
+If a commander causes anyone else’s tower to fall, through clumsiness or deliberate sabotage, that model suffers a moment of lucid clarity and sobers up: their tower dice are all discarded, but they remain standing. (Basically: don’t knock other player’s towers over.)
 
-If a rolled die causes a tower to fall, the boss that rolled that die has knocked that tower over. If a stray die from a tumbling tower causes another tower to fall, the boss that caused the initial cascade is the one that knocked that other tower over.
+If a rolled die causes a tower to fall, the commander that rolled that die has knocked that tower over. If a stray die from a tumbling tower causes another tower to fall, the commander that caused the initial cascade is the one that knocked that other tower over.
 
 ### Fallen Models
 A fallen model can’t be picked to activate until they are back on their feet again. 
@@ -112,7 +87,7 @@ Clear a play area roughly 3-foot by 3-foot and set up plenty of terrain.
 > _The table setup is something that you can freely experiment with, and potentially you wlil want to vary from scenario to scenario._
 
 ### Loot Tokens
-Each boss drops 6 Loot Tokens onto the table from a decent height. 
+Each commander drops 6 Loot Tokens onto the table from a decent height. 
 
 Put one more Loot Token in the middle as a tie-breaker. 
 
@@ -177,7 +152,7 @@ You have to use all your move dice.
 As you move the model, make sure the little tower of dice is touching them at all times. If any of the dice fall, so does the model. (See "The Tower".)
 
 ## Looting
-Each boss has a collection of Loot Tokens, called their Stash.
+Each commander has a collection of Loot Tokens, called their Stash.
 
 If you bump into a Loot Token while moving, you stop moving and pick it up.
 
@@ -195,7 +170,7 @@ If the thing that is hit is a model, compare the value of the bullet dice to the
 ## Fighting
 If two opposing models end up in contact, the current activation ends and a fight breaks out.
 
-When two models fight, their bosses count 3, 2, 1… and then throw one of either 👊 Thump, 🖐️ Shove or 🤏 Pinch with their hands.
+When two models fight, their commanderes count 3, 2, 1… and then throw one of either 👊 Thump, 🖐️ Shove or 🤏 Pinch with their hands.
 
 The active model resolves their effect first, then the passive model does. If it isn’t clear who the active model is, it is the model who’s movement (or who’s standing up) caused the fight to break out.
 
@@ -204,16 +179,16 @@ Once the throw is resolved, if the two models are still in contact (and both are
 ### Thump
 👊 Thump is a fist (like "rock" or "stone"). 
 
-If a boss throws 👊 Thump, their model Thumps the other model, unless the other boss threw 🖐️ Shove.
+If a commander throws 👊 Thump, their model Thumps the other model, unless the other commander threw 🖐️ Shove.
 
 To Thump: roll all your fighting weapons’ thump dice. Do big damage with each dice that equals or beats the other model’s toughness, and weak damage with the others.
 
 ### Shove
 🖐️ Shove is a flat hand (like "paper").
 
-If a boss throws 🖐️ shove, the other model is pushed back 3”, unless their boss threw 🤏 Pinch. 
+If a commander throws 🖐️ shove, the other model is pushed back 3”, unless their commander threw 🤏 Pinch. 
 
-The shoved model is moved by its boss, along with their tower. 
+The shoved model is moved by its commander, along with their tower. 
 
 The shoved model is moved directly away from their opponent. 
 
@@ -222,16 +197,16 @@ If rhe shoved model is shoved into some terrain, they suffer 1 damage.
 ### Pinch
 🤏 Pinch is the thumb and index finger extended and held together (like an "OK" sign, or "scissors" but using your thumb).
 
-If a boss throws 🤏 Pinch, they take 1 Loot Token from the other model’s boss, unless the other boss throws 👊 thump.
+If a commander throws 🤏 Pinch, they take 1 Loot Token from the other model’s commander, unless the other commander throws 👊 thump.
 
 > [!TIP]
-> _When both bosses throw Pinch, as they just swap a cap and nothing happens. This is a place that needs improvement, but I haven't improved it yet._
+> _When both commanderes throw Pinch, as they just swap a cap and nothing happens. This is a place that needs improvement, but I haven't improved it yet._
 
 ## Boot Action
 When a model takes a Boot Action, the effect depends on what they are in contact with.
 
 ### Put the Boot In
-If a model is in contact with a fallen enemy model, they take a Boot Action to "put the boot in": they take 1 Loot Token from the fallen model’s boss.
+If a model is in contact with a fallen enemy model, they take a Boot Action to "put the boot in": they take 1 Loot Token from the fallen model’s commander.
 
 ### Boot Up
 If a model is in contact with a fallen friendly model, they can boot them up: the booted model stands up. 
@@ -252,11 +227,11 @@ When the 30 minute timer is up, models can no longer take Boot Actions. (That me
 > _When the timer is up, everyone get one more activation, and then the game ends._
 
 ## Game End & Victory
-The game ends when only one boss is still playing. 
+The game ends when only one commander is still playing. 
 
-At the end of the game, the last remaining boss scoops up any in-play Loot Tokens. 
+At the end of the game, the last remaining commander scoops up any in-play Loot Tokens. 
 
-The winner is the boss that walked away with the most new Loot Tokens this game.
+The winner is the commander that walked away with the most new Loot Tokens this game.
 
 > [!TIP]
 > _The victory conditions could be anything, and you could easily vary them from scenario to scenario._
