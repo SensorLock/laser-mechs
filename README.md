@@ -4,65 +4,64 @@
 > [!TIP]
 > Laser Mechs is powered by Riot Dice, an open-source rules engine by Mike Hutchinson (https://planetsmashergames.com/riot-dice)._
 
-> [!WARNING]
-> _Only the text contained in this **Riot Dice** System Reference Document is covered by the CC license; the text of the rulebook of [SPACE GITS](https://planetsmashergames.com/space-gits) is not._
-
-> [!IMPORTANT]
-> _This SRD is written in a dry and technical manner. It also makes sure to only mention each rule once, and specifically in the spot that it most needs to be. For example, you'll find the Damage rule in the section describing "The Tower". This is an attempt to make each section of the rules modular, to increase the hackability._
-
 ## The Basics
 
 ### Models
-Mechs are 6mm-scale armored robots piloted by a skilled warrior. They come in many sizes and armaments.
+Mechs are 6mm-scale armored robots piloted by a skilled warrior. They come in many sizes and armaments. The models should have a reasonable size base.
 
 Models are defined by a set of Stats:
 * **Size**: Small (size=1), medium (size=2), or large (size=3).
 * **Cost**: The cost, in points, to add this model to your squad. All models cost 5*size points.
-* **Move Dice**: The dice you roll for this model when they make a Scoot Action. (5-size)d6
-* **Armor**: How many times you need to be critically hit before exploding. Equal to size.
-* **Firepower**: Choose how many lasers and how many missile launchers. Total count of both is twice the size.
+* **Move Dice**: Each model can roll up to 3d6 for movement.
+* **Armor**: How many towers the mech has. Equal to the size value.
 
 ### Players
 Players are referred to as Commanders. A model's commander is the player that is controlling them.
 
+### Squads
+The cost of a squad of mechs is the sum of the model costs.
+
+Choose a point value for squad sizes. The standard game size is 30 points per player, but you can adjust that to match the number of models available or to increase the amount of chaos on the battlefield.
+
 ### Measuring
-When measuring and checking lines between dice and models, you can measure from anywhere on the models' bases to anywhere on the dice. If it grazes either, it is in. If you are using a vehicle without a base, measure from the hull. You can premeasure during your activation.
+When measuring and checking lines between dice and models, you can measure from anywhere on the models' bases to anywhere on the dice. If it grazes either, it is in. You can premeasure during your activation.
 
-## The Tower
-Each model has a personal dice tower of dice. 
+## Heat
+Each model has one or more personal dice tower of dice to represent the accumulated heat of movement and weapons. 
 
-When a model adds a dice to its tower, its commander adds a six-sided dice to this tower, placing it on top of the other dice in their tower to form a single stack of dice. 
+The number of towers for each model is initially equal to the armor value. They start with a single die, called the armor die, for each tower.
 
-The tower has to touch the model at all times. I.e. When you move a model, you have to move their tower with them.
+Some abilities will require a commander to put dice on a tower of their choosing, and some will require them to put dice on each tower attached to a mech.
 
-> [!TIP]
-> _The tower is going to represent heat from firing weapons. If the tower falls over that model shuts down and is vulnerable. Damage is separately tracked as armor points._
+When a model adds a dice to a tower, its commander adds a six-sided dice to this tower, placing it on top of the other dice in their tower to form a single stack of dice. 
+
+The towers have to touch the model at all times. I.e. When you move a model, you have to move all their towers with them.
 
 ### Falling Dice
-If any of the dice fall off a git’s tower at any point, for any reason, that tower has fallen, and the dice from the tower are discarded.
+If any of the dice fall off a mech’s tower at any point, for any reason, that mech has shutdown. Lay the model down to represent this, and the dice from the towers are reset to just the armor dies for each tower.
 
-If a commander causes one of their own towers to fall: that git falls over. Knock the model over on its ass. If that happens during a git’s activation, their activation is over. 
+If a commander causes one of their own towers to fall: that mech has shutdown. If that happens during a mech’s activation, their activation is over. 
 
-If a commander causes anyone else’s tower to fall, through clumsiness or deliberate sabotage, that model suffers a moment of lucid clarity and sobers up: their tower dice are all discarded, but they remain standing. (Basically: don’t knock other player’s towers over.)
+If a commander causes anyone else’s tower to fall, through clumsiness or deliberate sabotage, that opposing mech had secret cooling tech: their tower dice are all reset to just armor dice, but they remain active.
 
 If a rolled die causes a tower to fall, the commander that rolled that die has knocked that tower over. If a stray die from a tumbling tower causes another tower to fall, the commander that caused the initial cascade is the one that knocked that other tower over.
 
-### Fallen Models
-A fallen model can’t be picked to activate until they are back on their feet again. 
+> [!WARNING]
+> Don’t knock other player’s towers over. It's tactically unsound.
 
-Fallen models don’t have towers and can’t be given any new tower dice until they are back on their feet.
+### Shutdown Models
+A shutdown model can be picked to activate, but the only thing they can do is restart.
 
-### Take a Swig
-After a model activates, they take a swig: add a D6 to the top of their tower. 
+Shutdown models can be damaged as normal.
 
 ### Damage
-When one of your models gets damaged, for each point of damage received, your opponent gives you a D6 to add to your damaged model’s tower.
+When one of your models gets damaged, remove an armor dice and the tower above it.
 
-> [!TIP]
-> _The tower in SPACE GITS represents drunkenness and bruises. Your tower could represent anything you like: fear, stress, excitement, arcane energy, loss of control, heat. You could even change the tower to work in reverse: with each model starting with a tower of whatever number of dice and wanting to keep them for whatever reason; maybe they provide power, boost stats, or are the victory system (like some kind of egg-and-spoon race...)._
+If that was the last armor dice, the mech is destroyed.
+If it has remaining armor dice, roll the dice from the removed tower. Any that roll 5 or 6 must be distributed among the remaining towers.
 
 ## Weapons
-Weapon are either Shooting Weapons, and used during Shoot Actions, or Fighting Weapons, used during Fights.
+Weapons are either Shooting, and used during Shoot Actions, or Melee, used during Fights.
 
 ### Shooting Weapons
 Shooting Weapons have the following stats:
@@ -78,6 +77,9 @@ Fighting Weapons have the following stats:
 * **Thump Dice**: The dice rolled when thumping with this weapon.
 * **Weak/Big Damage**: The damage values that apply when thumping another model with this weapon.
 
+> [!TODO]
+> Weapons table. Integrate into cost structure of squad.
+
 ## Set Up
 
 ### Table
@@ -86,79 +88,68 @@ Clear a play area roughly 3-foot by 3-foot and set up plenty of terrain.
 > [!TIP]
 > _The table setup is something that you can freely experiment with, and potentially you wlil want to vary from scenario to scenario._
 
-### Loot Tokens
-Each commander drops 6 Loot Tokens onto the table from a decent height. 
+### Salvage
+Each commander drops 6 Salvage Tokens onto the table from a decent height. 
 
-Put one more Loot Token in the middle as a tie-breaker. 
-
-> [!TIP]
-> _The loot tokens aren't essential, but the do provide a randomly distributed set of focus points for the game. You could alter the placement of these loot tokens, or replace them with a different objective system, as you wish._
+Put one more Salvage Token in the middle as a tie-breaker. 
 
 ### Deployment
 Randomly determine a First Player.
 
-Starting with the First Player, take turns to place one model at a time anywhere in play, at least 4” from all Loot Tokens and enemy models.
+Starting with the First Player, take turns to place one model at a time anywhere in play, at least 4” from all Salvage Tokens and enemy models.
 
 The First Player activates the first model.
-
-> [!TIP]
-> _The deployment process is something that you can freely experiment with, and potentially want to vary from scenario to scenario._
 
 ### Start the Clock
 Once all the models are deployed, start a timer for 30 minutes and start the game. 
 
-> [!TIP]
-> _Varying the timer length, or remove it, to change the length or remove the time pressure of the game._
-
-
 ## Activating Models
-We take turns activate one model each, starting from the First Player.
+Take turns activating one model each, starting from the First Player.
 
-There are no game rounds, we just keep activating models until one of us has had enough and the game ends.
+There are no game rounds, just keep activating models until time is up or only force remains on the field of battle.
 
-When it is your turn to activate a model, you choose one of your models (but not a fallen one) and activate it.
+When it is your turn to activate a model, you choose one of your models and activate it.
 
-When you activate a model, they do one or two different actions out of: Shoot, Scoot and Boot (in any order). 
+When you activate a model, they do one or two different actions out of: Restart, Run, Shoot, Fire, or Steal. Shutdown models must Restart as their first action and can not Shoot.
 
 You don’t have to activate your models in rounds, if you want to keep activating the same model turn after turn: that is allowed.
 
-> [!TIP]
-> _Pretty much every word in this section could be modified without breaking the game engine._
+## Restart
+Turn the mech off, then on again. Stand the model up. Somehow, this procedure discharges all the heat.
 
+When a model stands up, put it anywhere at least touching the area where they were just lying. If you place them into contact with an enemy, the current activation ends and a fight breaks out.
 
-## Scoot Action
-When a model takes a Scoot Action, roll their Move Dice into the play area.
+The commander should double-check the armor dice are in place where they want and touching the base of the model.
 
-> [!TIP]
-> _You can vary the number and type of dice thrown as Move Dice._
- 
-Resolve one Move Die at a time in any order
+## Run Action
+When a model takes a Run Action, roll their Move Dice into the play area.
 
-> [!TIP]
-> _You could force the player to resolve the Move Dice in ascending order, or starting with the dice closest to them, or something else._
-  
+Resolve one or more Move Die at a time in any order.
+
 When you resolve a Move Die you move your model directly towards that dice a number of inches equal to the value of that dice and then discard it. 
 
 You have to move the model the full distance towards the Move Die if you can.
 
-> [!TIP]
-> _You could replace this with "You do not have to move the model the full distance towards the Move Die if you can." I.e. You could force the model to move the full rolled distance towards the Move Die, or permit them to stop at any point during their scoot._
+You do not have to use all your move dice, and can discard any of your Move Dice without resolving them.
 
-You have to use all your move dice. 
+As you move the model, make sure every tower of dice is touching them at all times. If any of the dice fall, the model has shutdown. (See "Heat".)
 
-> [!TIP]
-> _You could replace this with "You do not have to use all your move dice, and can discard any of your Move Dice without resolving them." I.e. You could force the player to resolve all dice, or permit them to only resolve the ones they want to, and discard the others._
+All mechs can resolve one move dice without adding Heat, but for each dice beyond the first resolved, add a number of heat dice to the model equal to the size of the model. The commander can choose how to distribute those among the towers on that model.
 
-As you move the model, make sure the little tower of dice is touching them at all times. If any of the dice fall, so does the model. (See "The Tower".)
+> [!WARNING]
+> That big mech can go zipping around the battlefield, but it's going to get very hot, very fast.
 
-## Looting
-Each commander has a collection of Loot Tokens, called their Stash.
+## Salvaging
+Each commander has a collection of Salvage Tokens, called their Stash.
 
-If you bump into a Loot Token while moving, you stop moving and pick it up.
+If you bump into a Salvage Token while moving, you stop moving and pick it up.
 
-Loot Tokens that you pick up go into your Stash.
+Salvage Tokens that you pick up go into your Stash.
 
 ## Shoot Action
+> [!TODO]
+> Lasers: high damage chance, directional, heat to all towers
+> Missiles: scatter hits, heat to one tower
 When a model takes a Shoot Action, it selects one of its shooting weapons and gathers a number and type of bullet dice indicated by the shooting weapon's stats.
 
 Roll your bullet dice into the play area. 
@@ -168,6 +159,8 @@ Each bullet travels from the shooting model in a straight line directly towards 
 If the thing that is hit is a model, compare the value of the bullet dice to the toughness of that model. If the rolled value meets or beats the toughness, the unlucky model suffers big damage from the gun. If the value is lower than the model’s toughness, they suffer weak damage.
 
 ## Fighting
+> [!TODO]
+> big damage removes a tower
 If two opposing models end up in contact, the current activation ends and a fight breaks out.
 
 When two models fight, their commanderes count 3, 2, 1… and then throw one of either 👊 Thump, 🖐️ Shove or 🤏 Pinch with their hands.
@@ -192,7 +185,7 @@ The shoved model is moved by its commander, along with their tower.
 
 The shoved model is moved directly away from their opponent. 
 
-If rhe shoved model is shoved into some terrain, they suffer 1 damage.
+If the shoved model is shoved into some terrain, they suffer 1 damage.
 
 ### Pinch
 🤏 Pinch is the thumb and index finger extended and held together (like an "OK" sign, or "scissors" but using your thumb).
@@ -202,43 +195,23 @@ If a commander throws 🤏 Pinch, they take 1 Loot Token from the other model’
 > [!TIP]
 > _When both commanderes throw Pinch, as they just swap a cap and nothing happens. This is a place that needs improvement, but I haven't improved it yet._
 
-## Boot Action
-When a model takes a Boot Action, the effect depends on what they are in contact with.
+## Steal Action
+If a model is in contact with a fallen enemy model, they can take a Steal Action to rip valuable tech off their mech. They take 1 Salvage Token from the fallen model’s commander.
 
-### Put the Boot In
-If a model is in contact with a fallen enemy model, they take a Boot Action to "put the boot in": they take 1 Loot Token from the fallen model’s commander.
 
-### Boot Up
-If a model is in contact with a fallen friendly model, they can boot them up: the booted model stands up. 
+## Call for Extraction
+When it is your turn to activate, you can call for extraction instead.
 
-When a model stands up, put it anywhere at least touching the area where they were just lying. If you place them into contact with an enemy, the current activation ends and a fight breaks out.
+When it is your turn to activate, if you have nothing left that you can activate, you have to extract.
 
-## Leg It
-When it is your turn to activate, you can leg it instead.
-
-When it is your turn to activate, if you have nothing left that you can activate, you have to leg it.
-
-When you leg it: any of your models that are within 6” of an enemy model are replaced with a Loot Token from your stash, then remove the rest of your models and you are out of the game.
-
-## Times Up
-When the 30 minute timer is up, models can no longer take Boot Actions. (That means that fallen models stay down).
-
-> [!TIP]
-> _When the timer is up, everyone get one more activation, and then the game ends._
+When you extract: any of your models that are within 6” of an enemy model are replaced with a Salvage Token from your stash, then remove the rest of your models and you are out of the game.
 
 ## Game End & Victory
-The game ends when only one commander is still playing. 
+When the 30 minute timer is up, every commander gets one more activation.
+Models can no longer take Restart Actions. (That means that overheated mechs stay shutdown).
 
-At the end of the game, the last remaining commander scoops up any in-play Loot Tokens. 
+The game also ends if only one commander still has mechs on the field of battle. 
 
-The winner is the commander that walked away with the most new Loot Tokens this game.
+At the end of the game, if there is only one remaining commander, they get to scoop up any in-play Tech Caches. 
 
-> [!TIP]
-> _The victory conditions could be anything, and you could easily vary them from scenario to scenario._
-
-# Opportunities for elaboration
-This SRD doesn't contain rules for terrain, or vehicles, or different types of models. It doesn't contain special rules for weapons, or any factions. It doesn't contain any scenarios, beyond a single default "loot the tokens" play mode. These are all open design spaces for you to inject your own flavour and fantasy on top of the system.
-
-Hack this system to pieces, superglue it back together in whatever shape you like. Playtest.
-
-If you use **Riot Dice** for anything, [let me know](https://planetsmashergames.com/discord/)
+The winner is the commander that captured the most Tech Caches.
