@@ -58,7 +58,7 @@ Shutdown models can be damaged as normal.
 When one of your models gets damaged, remove an armor dice and the tower above it.
 
 If that was the last armor dice, the mech is destroyed.
-If it has remaining armor dice, roll the dice from the removed tower. Any that roll 5 or 6 must be distributed among the remaining towers.
+If it has remaining armor dice, redistribute all the heat dice that were above the armor dice in that tower among the remaining towers.
 
 ## Weapons
 Weapons are either Shooting, and used during Shoot Actions, or Melee, used during Fights.
