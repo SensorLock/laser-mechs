@@ -129,7 +129,7 @@ You do not have to use all your move dice, and can discard any of your Move Dice
 
 As you move the model, make sure every tower of dice is touching them at all times. If any of the dice fall, the model has shutdown. (See "Heat".)
 
-All mechs can resolve one move dice without adding Heat, but for each dice beyond the first resolved, add a number of heat dice to the model equal to the size of the model. The commander can choose how to distribute those among the towers on that model.
+All mechs can resolve one move dice without adding Heat, but for each dice beyond the first resolved, add a number of heat dice to the model equal to the size of the model. This is done after resolving all dice in the Run action, and the commander can choose how to distribute those among the towers on that model.
 
 > [!WARNING]
 > That big mech can go zipping around the battlefield, but it's going to get very hot, very fast.
