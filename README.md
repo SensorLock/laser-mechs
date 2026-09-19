@@ -49,11 +49,6 @@ If a rolled die causes a tower to fall, the commander that rolled that die has k
 > [!WARNING]
 > Don’t knock other player’s towers over. It's tactically unsound.
 
-### Shutdown Models
-A shutdown model can be picked to activate, but the only thing they can do is restart.
-
-Shutdown models can be damaged as normal.
-
 ### Damage
 When one of your models gets damaged, remove an armor dice and the tower above it.
 
